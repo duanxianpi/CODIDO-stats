@@ -17,6 +17,6 @@ with open('stats.csv', 'a') as f:
         ups = alogrithm.select_one('div > div.card-body > div > div:nth-child(1) > a').text.strip()
         runs = alogrithm.select_one('div > div.card-body > div > div:nth-child(2) > a').text.strip()
         
-        row = '{},{},{},{},{}\n'.format(now ,name, author, ups, runs)
+        row = '{},"{}","{}",{},{}\n'.format(now ,name, author, ups, runs)
         f.write(row)
 
