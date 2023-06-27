@@ -36,4 +36,8 @@ jobs:
         git config --global user.name "duanxianpi"
         git add stats.csv
         git commit -m "Github Action Auto Updated"
-        git push
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
