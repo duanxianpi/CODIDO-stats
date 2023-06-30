@@ -30,6 +30,7 @@ jobs:
     - name: Update CSV
       run: |
         python update_stats.py
+        python plot.py
         git diff
         git config --global user.email "duanxianpi@gmail.com"
         git config --global user.name "duanxianpi"
