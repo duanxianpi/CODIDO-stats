@@ -33,4 +33,4 @@ plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 # plt.gca().legend_ = None
 
 # Save the figure 1920x1080
-plt.savefig('plot.png', dpi=120,bbox_inches='tight')
+plt.savefig('plot.svg', dpi=120,bbox_inches='tight',format='svg')
