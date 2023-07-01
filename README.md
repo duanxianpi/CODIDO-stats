@@ -1,2 +1,2 @@
 # CODIDO-stats
-![Weekly Trend](plot.png)
+![Weekly Trend](plot.svg)
