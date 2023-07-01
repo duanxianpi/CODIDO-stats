@@ -34,7 +34,7 @@ jobs:
         git diff
         git config --global user.email "duanxianpi@gmail.com"
         git config --global user.name "duanxianpi"
-        git add stats.csv plot.png
+        git add stats.csv plot.svg
         git commit -m "Github Action Auto Updated"
         
     - name: Push changes
