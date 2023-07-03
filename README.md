@@ -1,2 +1,3 @@
 # CODIDO-stats
-![](https://raw.githubusercontent.com/duanxianpi/CODIDO-stats/main/plot.svg)
+
+<img alt="my image" src="https://raw.githubusercontent.com/duanxianpi/CODIDO-stats/main/plot.svg">
