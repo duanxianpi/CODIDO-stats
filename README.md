@@ -1,2 +1,2 @@
 # CODIDO-stats
-![](./plot.png)
+![](./plot.svg)
