@@ -20,10 +20,10 @@ for name, group in df.groupby('Name'):
     group.plot(x='Timestamp', y='Runs', ax=ax, label=name)
 
 # # Set the x-axis to have a tick every 6 hours
-ax.xaxis.set_major_locator(mdates.MinuteLocator(interval=390))
+ax.xaxis.set_major_locator(mdates.MinuteLocator(interval=720))
 
 # Set the x-axis to have a tick every day, formatting the tick labels as 'June 15'
-ax.xaxis.set_major_formatter(DateFormatter("%m/%d %I:%M"))
+ax.xaxis.set_major_formatter(DateFormatter("%m/%d %H:%M"))
 
 plt.xlabel('Time (In EST)')
 plt.ylabel('Runs')
