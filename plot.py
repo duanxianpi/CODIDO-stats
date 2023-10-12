@@ -2,9 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
 import matplotlib.dates as mdates
+import time
 
 # Load your data
-df = pd.read_csv('stats.csv')
+currentYearMonth = time.strftime("%Y-%m")
+df = pd.read_csv(f'stats-{currentYearMonth}.csv')
 
 # Convert the 'Timestamp' column to datetime format
 df['Timestamp'] = pd.to_datetime(df['Timestamp'], unit='s') - pd.Timedelta('05:00:00')
