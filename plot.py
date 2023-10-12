@@ -6,6 +6,7 @@ import time
 
 # Load your data
 currentYearMonth = time.strftime("%Y-%m")
+print(f'Reading file stats/stats-{currentYearMonth}.csv')
 df = pd.read_csv(f'stats/stats-{currentYearMonth}.csv')
 
 # Convert the 'Timestamp' column to datetime format
