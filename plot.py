@@ -6,7 +6,7 @@ import time
 
 # Load your data
 currentYearMonth = time.strftime("%Y-%m")
-df = pd.read_csv(f'stats-{currentYearMonth}.csv')
+df = pd.read_csv(f'stats/stats-{currentYearMonth}.csv')
 
 # Convert the 'Timestamp' column to datetime format
 df['Timestamp'] = pd.to_datetime(df['Timestamp'], unit='s') - pd.Timedelta('05:00:00')

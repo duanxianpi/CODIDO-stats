@@ -12,7 +12,7 @@ soup = BeautifulSoup(html, 'html.parser')
 
 all_alogrithms = soup.select('div.row.row-cols-1.row-cols-md-2.row-cols-lg-4.g-4.card-group > div')
 
-with open(f'stats-{currentYearMonth}.csv', 'a') as f:
+with open(f'stats/stats-{currentYearMonth}.csv', 'a') as f:
     for alogrithm in all_alogrithms:
         name = alogrithm.select_one('div > div.card-body > h5').text.strip()
         author = alogrithm.select_one('div > div.card-footer > p').text.strip()[13:]
