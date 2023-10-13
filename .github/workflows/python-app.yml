@@ -31,10 +31,9 @@ jobs:
       run: |
         python update_stats.py
         python plot.py
-        git diff
         git config --global user.email "duanxianpi@gmail.com"
         git config --global user.name "duanxianpi"
-        git add stats.csv plot.svg
+        git add .
         git commit -m "Github Action Auto Updated"
         
     - name: Push changes
